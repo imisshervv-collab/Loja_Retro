@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinil Retrô - A Música em Sua Essência</title>
+    
+    <!-- Vinculando o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Vinculando o arquivo JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>💿 Vinil Retrô</h1>
+        <p>Reviva a magia da música analógica</p>
+    </header>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main>
+        <!-- TELA 1: Menu de Gêneros -->
+        <section id="tela-generos">
+            <div class="centralizar-titulo">
+                <h2>Catálogo de Gêneros</h2>
+            </div>
+            <!-- Div onde o JavaScript vai injetar os gêneros -->
+            <div class="grid-container" id="lista-generos"></div>
+        </section>
+
+        <!-- TELA 2: Lista de Produtos (Inicia escondida) -->
+        <section id="tela-produtos" class="escondido">
+            <button class="btn-voltar" onclick="voltarParaGeneros()">⬅ Voltar ao Menu</button>
+            
+            <div class="centralizar-titulo">
+                <h2 id="titulo-categoria">Categoria</h2>
+            </div>
+            
+            <!-- Div onde o JavaScript vai injetar os discos -->
+            <div class="grid-container" id="lista-discos"></div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>📍 Visite nossa loja: Avenida João César de Oliveira, 2300 - Centro, Contagem - MG</p>
+        <p>📞 WhatsApp: (31) 99999-9999</p>
+    </footer>
+
+</body>
+</html>
